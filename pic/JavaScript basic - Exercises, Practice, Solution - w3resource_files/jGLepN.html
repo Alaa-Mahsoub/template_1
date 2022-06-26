@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://cdpn.io/w3resource/fullembedgrid/jGLepN?type=embed&animations=run -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>CodePen - JavaScript - common-editor-exercises</title>
+<link rel="stylesheet" href="./cngzI.css">
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+
+
+<title>Write a JavaScript function to repeat a string a specified times.</title>
+
+
+
+<script src="./stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js.download"></script>
+<script src="./cngzI.js.download"></script><pre><code><span class="debug">aaaa
+</span><span class="debug">Error in string or count.
+</span><span class="debug">Error in string or count.
+</span><span class="debug">Error in string or count.
+</span></code></pre>
+<script id="rendered-js">
+      function repeat_string(string, count)
+{
+  if (string == null || count < 0 || count === Infinity || count == null)
+  {
+    return 'Error in string or count.';
+  }
+  count = count | 0; // Floor count.
+  return new Array(count + 1).join(string);
+}
+
+console.log(repeat_string('a', 4));
+console.log(repeat_string('a'));
+console.log(repeat_string('a', -2));
+console.log(repeat_string('a', Infinity));
+      //# sourceURL=pen.js
+    </script>
+<script src="./css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js.download"></script>
+
+
+</body></html>
